@@ -7,4 +7,4 @@ I created it just for practice and to polish my skills.
 
 ## 📹 Demo Video
 
-[![Watch the video](Rock,paper&scissor.mp4)]
+[![Watch the video]](Rock,paper&scissor.mp4)
