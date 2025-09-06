@@ -8,3 +8,8 @@ I created it just for practice and to polish my skills.
 ## 📹 Demo Video
 
 [![Watch the video]](Rock,paper&scissor.mp4)
+
+---
+
+## LIVE DEMO
+#Click here: https://minhaj-jsgame.netlify.app/
