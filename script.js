@@ -15,7 +15,7 @@ const drawGame = () => {
   msg.style.Color = "white";
 };
 
-const showWinner = (userWin, compChoice, userChoice) => {
+const showWinner = (userWin, userChoice, compChoice) => {
   if (userWin) {
     userScore++;
     userScorePara.innerText = userScore;
@@ -25,14 +25,30 @@ const showWinner = (userWin, compChoice, userChoice) => {
   } else {
     compScore++;
     compScorePara.innerText = compScore;
-    msg.innerText = `You lose! ${userChoice} beats your ${compChoice}`;
+    msg.innerText = `You lose! ${compChoice} beats your ${userChoice}`;
     msg.style.backgroundColor = "red";
     msg.style.Color = "white";
   }
 };
 
+// const showWinner = (userWin, userChoice, compChoice) => {
+//   if (userWin) {
+//     userScore++;
+//     userScorePara.innerText = userScore;
+//     msg.innerText = `You win! Your ${userChoice} beats ${compChoice}`;
+//     msg.style.backgroundColor = "green";
+//     msg.style.color = "white";
+//   } else {
+//     compScore++;
+//     compScorePara.innerText = compScore;
+//     msg.innerText = `You lose! ${compChoice} beats your ${userChoice}`;
+//     msg.style.backgroundColor = "red";
+//     msg.style.color = "white";
+//   }
+// };
+
 const genCompChoice = () => {
-  const options = ["rock", "paper", "scissor"];
+  const options = ["paper", "rock", "scissor"];
   const randomIdx = Math.floor(Math.random() * 3);
   return options[randomIdx];
 };
